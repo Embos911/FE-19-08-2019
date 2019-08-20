@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/stylelogin.css">
+</head>
+<body>
+    <h1>Inicia Sesion para ingresar</h1>
+    <div class="Login">
+        <form class="Forma">
+            <input id="Usuario" type="text" placeholder="User Name">
+            <input id="Contrasena" type="text" placeholder="Password">
+            <button onclick=validar()>Iniciar Sesión</button>
+        </form>
+        </div>
+
+    </div>
+    <script>
+    
+    function validar(){
+        var usuario = document.getElementById("Usuario").value;
+        var contrasena = document.getElementById("Contrasena").value;
+        console.log(usuario + contrasena);
+        
+        if(usuario== "Emilio" && contrasena== "123123"){
+            function redireccionar(){
+            window.locationf="index.html";
+} 
+        }
+        else{
+            alert("Contraseña Invalida")
+        }
+    }
+
+    </script>
+</body>
+</html>
